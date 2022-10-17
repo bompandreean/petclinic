@@ -61,6 +61,7 @@ class VisitController {
 			Map<String, Object> model) {
 		Owner owner = this.owners.findById(ownerId);
 
+
 		Pet pet = owner.getPet(petId);
 		model.put("pet", pet);
 		model.put("owner", owner);
